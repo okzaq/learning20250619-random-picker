@@ -269,3 +269,143 @@
   margin: 10px 0;
   font-weight: bold;
 }
+
+/* チェックボックス関連のスタイル */
+.name-checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* 選択制御ボタン */
+.selection-controls {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.select-all-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.select-all-button,
+.deselect-all-button {
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.select-all-button:hover,
+.deselect-all-button:hover {
+  background-color: #4fa8c7;
+}
+
+/* 抽選制御 */
+.lottery-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.lottery-mode {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.lottery-mode input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.count-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.count-input {
+  width: 80px;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 2px solid #61dafb;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #282c34;
+  text-align: center;
+}
+
+.count-input:focus {
+  outline: none;
+  border-color: #4fa8c7;
+}
+
+.ranking-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.ranking-option input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+/* 複数当選者表示 */
+.winners-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.winner-item {
+  font-size: 18px;
+  color: #ffffff;
+  margin: 5px 0;
+  padding: 10px;
+  background-color: rgba(97, 218, 251, 0.2);
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+  .select-all-controls {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .lottery-controls {
+    padding: 15px;
+  }
+  
+  .count-selector {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .name-input-wrapper {
+    flex-wrap: wrap;
+  }
+  
+  .name-checkbox {
+    margin-right: 5px;
+  }
+}
